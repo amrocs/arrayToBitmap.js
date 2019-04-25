@@ -45,7 +45,7 @@ var pixelToBitmap = function (colorArr) {
   var img = [];
   var imgH = colorArr.length;
   var imgW;
-  for (var y = imgH - 1; y >= 0; y--) { // 下から描画するので注意
+  for (var y = imgH - 1; y >= 0; y--) { // draw from bottom to top
     imgW = colorArr[y].length;
     for (var x = 0; x < imgW; x++) {
       img.push(
